@@ -1,10 +1,10 @@
 package ex1;
 
 public class Prod {
-	long id;
-	String name;
-	String category;
-	double price;
+	private long id;
+	private String name;
+	private String category;
+	private double price;
 
 	public Prod(long id, String name, String category, double price) {
 		this.setId(id);
@@ -45,4 +45,10 @@ public class Prod {
 	public double getPrice() {
 		return price;
 	}
+
+	@Override
+	public String toString() {
+		return "id" + id + "- name" + name + "- category" + category + "- price" + price + " ";
+	}
+
 }
