@@ -30,10 +30,10 @@ public class MainShop {
 		books.add(new Prod(19L, "Toy 6", "Girls", 75.0));
 		books.add(new Prod(20L, "Electronics 4", "Electronics", 260.0));
 
-		List<Prod> over100 = books.stream()
-				.filter(books -> "Woman".equals(books.getCatedory()) && books.getPrice() > 100).toList();
+		List<Prod> over100 = books.stream().filter(book -> "Woman".equals(book.getCategory()) && book.getPrice() > 100)
+				.toList();
 
-		books.forEach(System.out::println);
+		over100.forEach(System.out::println);
 
 	}
 

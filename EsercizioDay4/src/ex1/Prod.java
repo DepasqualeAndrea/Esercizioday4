@@ -38,7 +38,7 @@ public class Prod {
 		return name;
 	}
 
-	public String getCatedory() {
+	public String getCategory() {
 		return category;
 	}
 
