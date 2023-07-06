@@ -30,6 +30,8 @@ public class MainShop {
 		books.add(new Prod(19L, "Toy 6", "Girls", 75.0));
 		books.add(new Prod(20L, "Electronics 4", "Electronics", 260.0));
 
+		System.out.println(books);
+
 		List<Prod> over100 = books.stream().filter(book -> "Woman".equals(book.getCategory()) && book.getPrice() > 100)
 				.toList();
 
